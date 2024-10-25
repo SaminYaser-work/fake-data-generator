@@ -1,5 +1,36 @@
 {
-    "require": {
-        "fakerphp/faker": "^1.23"
+  "name": "wp-phpunit/example-project",
+  "description": "Example project for using WP PHPUnit",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Evan Mattson",
+      "email": "me@aaemnnost.tv"
     }
+  ],
+  "require": {
+    "fakerphp/faker": "^1.23",
+    "roots/wordpress": "^6.0"
+  },
+  "require-dev": {
+    "antecedent/patchwork": "^2.2",
+    "brain/monkey": "2.*",
+    "mockery/mockery": "^1.6",
+    "phpunit/phpunit": "^9.0",
+    "wp-phpunit/wp-phpunit": "^6.0",
+    "yoast/phpunit-polyfills": "^1.0"
+  },
+  "scripts": {
+    "test": "phpunit --color=always --verbose"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "sort-packages": true,
+    "allow-plugins": {
+      "roots/wordpress-core-installer": true
+    }
+  }
 }
