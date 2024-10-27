@@ -20,7 +20,7 @@ export default defineConfig({
       input: 'src/main.ts',
       output: {
         entryFileNames: '[name].js',
-        assetFileNames: '[name][extname]'
+        assetFileNames: '[name][extname]',
       },
     },
   },
